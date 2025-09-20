@@ -3,7 +3,7 @@
     <div class="grid">
         @for (c of cocktails; track $index) {
         <div class="card">
-            <img [src]="c.image" [alt]="c.name">
+            <img [src]="c.image" [alt]="c.name" />
             <h3>{{ c.name }}</h3>
             <p>{{ c.description }}</p>
             <span>S/ {{ c.price }}</span>
