@@ -1,9 +1,18 @@
 html,
 body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    /* 🔒 bloquea scroll */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  /* 👇 Scroll habilitado globalmente */
+  overflow: auto;
+}
+
+/* Scroll invisible en todas las páginas excepto Home */
+body {
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Edge, Safari */
 }

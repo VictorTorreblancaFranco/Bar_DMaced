@@ -1,0 +1,7 @@
+# Normaliza todo a LF en el repo y en el working copy
+* text=auto eol=lf
+
+# Si necesitas CRLF en scripts de Windows, déjalos explícitos:
+*.bat eol=crlf
+*.cmd eol=crlf
+*.ps1 eol=crlf
