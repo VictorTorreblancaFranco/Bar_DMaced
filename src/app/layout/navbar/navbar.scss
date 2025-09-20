@@ -1,0 +1,41 @@
+:root {
+    --color-bg: #1e1e1e;
+    --color-accent: #e74c3c;
+    --color-text: #ffffff;
+}
+
+.navbar {
+    background: var(--color-bg);
+    color: var(--color-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-family: 'Segoe UI', sans-serif;
+
+    &__logo {
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: var(--color-accent);
+    }
+
+    &__links {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+
+        a {
+            color: var(--color-text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+
+            &.active,
+            &:hover {
+                color: var(--color-accent);
+            }
+        }
+    }
+}

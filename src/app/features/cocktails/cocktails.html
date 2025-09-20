@@ -1,0 +1,15 @@
+<section class="cocktails">
+    <h2>Nuestros Cocteles</h2>
+    <div class="grid">
+        @for (c of cocktails; track $index) {
+        <div class="card">
+            <img [src]="c.image" [alt]="c.name">
+            <h3>{{ c.name }}</h3>
+            <p>{{ c.description }}</p>
+            <span>S/ {{ c.price }}</span>
+        </div>
+        } @empty {
+        <p>No hay cocteles disponibles por ahora 🍸</p>
+        }
+    </div>
+</section>

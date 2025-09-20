@@ -1,0 +1,13 @@
+:root {
+    --color-footer-bg: #1a1a1a;
+    --color-footer-text: #888;
+}
+
+.footer {
+    background: var(--color-footer-bg);
+    color: var(--color-footer-text);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', sans-serif;
+}

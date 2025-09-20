@@ -1,0 +1,36 @@
+.cocktails {
+    padding: 2rem;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+        padding: 1rem;
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            margin: .5rem 0;
+        }
+
+        span {
+            font-weight: bold;
+            color: #c0392b;
+        }
+    }
+}
